@@ -7,6 +7,7 @@
 
 ```bash
 $ yarn install
+$ yarn workspace nextjs-yarn-workspaces-sample-module build
 $ yarn workspace nextjs-yarn-workspaces-sample-ui build
 $ yarn workspace nextjs-yarn-workspaces-sample-app dev
 ```
