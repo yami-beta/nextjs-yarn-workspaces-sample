@@ -1,17 +1,7 @@
 {
+  "extends": "../../tsconfig",
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "lib": [
-      "es2018",
-      "dom"
-    ],
     "jsx": "preserve",
-    "sourceMap": true,
-    "strict": true,
-    "noUnusedLocals": true,
-    "esModuleInterop": true,
     "allowJs": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,

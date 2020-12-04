@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useTodoList } from "nextjs-yarn-workspaces-sample-module";
+import { useTodoList } from "nextjs-yarn-workspaces-sample-domain";
 
 type TodoListProps = {};
 

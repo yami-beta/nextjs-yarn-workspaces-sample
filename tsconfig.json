@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
-    "target": "es2015",
-    "module": "commonjs",
-    "lib": ["es2018", "dom"],
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": ["esnext", "dom"],
     "jsx": "react",
     "sourceMap": true,
     "strict": true,

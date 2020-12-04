@@ -1,18 +1,21 @@
 {
-  "name": "nextjs-yarn-workspaces-sample-module",
+  "name": "nextjs-yarn-workspaces-sample-domain",
   "version": "0.0.0",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "lib/index.js",
+  "module": "module/index.js",
+  "types": "lib/index.d.ts",
   "author": "yami-beta <yami-beta@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
     "lint:eslint": "eslint --ext ts,tsx,js .",
     "lint": "run-p lint:*",
-    "clean": "rimraf ./dist",
-    "build:ts": "tsc",
-    "build": "run-s clean build:ts",
-    "watch": "tsc --watch"
+    "clean": "rimraf ./lib ./module",
+    "build:module": "tsc --project tsconfig.module.json",
+    "build:lib": "tsc --project tsconfig.json",
+    "build": "run-s clean build:*",
+    "watch:module": "tsc --project tsconfig.json --watch",
+    "watch:lib": "tsc --project tsconfig.json --watch",
+    "watch": "run-p watch:*"
   },
   "dependencies": {
     "@types/react": "^17.0.0",
