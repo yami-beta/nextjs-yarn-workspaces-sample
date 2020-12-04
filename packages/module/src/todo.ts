@@ -9,11 +9,11 @@ export const useTodoList = () => {
   const [todoList, setTodoList] = useState<Todo[]>([]);
 
   const appendTodo = useCallback((todo: Todo) => {
-    setTodoList(prev => [...prev, todo]);
+    setTodoList((prev) => [...prev, todo]);
   }, []);
 
   const updateTodo = useCallback((index: number, todo: Todo) => {
-    setTodoList(prev => {
+    setTodoList((prev) => {
       return [...prev.slice(0, index), todo, ...prev.slice(index + 1)];
     });
   }, []);
@@ -21,6 +21,6 @@ export const useTodoList = () => {
   return {
     todoList,
     appendTodo,
-    updateTodo
+    updateTodo,
   };
 };
