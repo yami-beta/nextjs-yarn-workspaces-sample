@@ -2,9 +2,8 @@
   "extends": "../../tsconfig",
   "compilerOptions": {
     "rootDir": "./src",
-    "outDir": "./lib",
+    "outDir": "./module",
     "target": "es2015",
-    "module": "commonjs",
     "declaration": true,
     "declarationMap": true
   }

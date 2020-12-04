@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import { Heading, TodoList } from "nextjs-yarn-workspaces-sample-ui";
-import { useCounter } from "nextjs-yarn-workspaces-sample-module";
+import { useCounter } from "nextjs-yarn-workspaces-sample-domain";
 
 const IndexPage: NextPage = () => {
   const { count, increment, decrement } = useCounter();
