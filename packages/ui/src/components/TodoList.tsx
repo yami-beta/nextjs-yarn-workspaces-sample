@@ -12,7 +12,7 @@ export const TodoList: React.FC<TodoListProps> = () => {
       <input
         type="text"
         value={draft}
-        onChange={event => {
+        onChange={(event) => {
           setDraft(event.currentTarget.value);
         }}
       />
@@ -32,10 +32,10 @@ export const TodoList: React.FC<TodoListProps> = () => {
               <input
                 type="checkbox"
                 checked={todo.completed}
-                onChange={event => {
+                onChange={(event) => {
                   updateTodo(i, {
                     ...todo,
-                    completed: event.currentTarget.checked
+                    completed: event.currentTarget.checked,
                   });
                 }}
               />
